@@ -22,7 +22,7 @@ resource "aws_route_table" "rt" {
 }
 resource "aws_route_table_association" "ra" {
  count=2
-  subnet_id      = aws_subnet.public_subnet.[*].id
+  subnet_id      = aws_subnet.public_subnet.*.id
   route_table_id = aws_route_table.rt.id
 }
 

@@ -8,5 +8,5 @@ variable "public_subnet" {
 }
 variable "azlist" {
   type    = list(any)
-  default = [us-east-1a, us-east-1b]
+  default = ["us-east-1a", "us-east-1b"]
 }
