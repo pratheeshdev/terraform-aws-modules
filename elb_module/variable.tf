@@ -1,4 +1,4 @@
-variable "aws_instance_id" {
+variable "target_id" {
   type    = list(any)
   default = []
 }
