@@ -6,3 +6,6 @@ variable "subnets" {
   type    = list(any)
   default = []
 }
+
+variable "vpc_id"{
+ }
