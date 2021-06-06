@@ -24,13 +24,13 @@ resource "aws_lb_listener" "myel" {
   load_balancer_arn = aws_lb.mylb.arn
   port              = 80
   protocol          = "HTTP"
-  default "action" {
+  default_action {
     target_group_arn = aws_lb_target-group.mytg.arn
     type             = forward
   }
 }
 
-resource "aws_lb_target_group_attachement" "ec2_attach" {
+resource "aws_lb_target_group_attachment" "ec2_attach" {
   count            = 2
   target_group_arn = aws_lb_target_group.mytg.arn
   target_id        = var.aws_instance_id[*]
