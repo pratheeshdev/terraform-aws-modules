@@ -9,3 +9,5 @@ variable "subnets" {
 
 variable "vpc_id"{
  }
+variable "aws_instance_id"{
+}

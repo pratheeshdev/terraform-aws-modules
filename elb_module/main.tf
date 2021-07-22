@@ -33,7 +33,7 @@ resource "aws_lb_listener" "myel" {
 resource "aws_lb_target_group_attachment" "ec2_attach" {
   count            = 2
   target_group_arn = aws_lb_target_group.mytg.arn
-  target_id        = var.aws_instance_id[*]
+  target_id        = var.aws_instance_id[count.index]
 }
 
 
