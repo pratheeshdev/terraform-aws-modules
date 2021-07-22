@@ -25,8 +25,8 @@ resource "aws_lb_listener" "myel" {
   port              = 80
   protocol          = "HTTP"
   default_action {
-    target_group_arn = aws_lb_target-group.mytg.arn
-    type             = forward
+    target_group_arn = aws_lb_target_group.mytg.arn
+    type             = "forward"
   }
 }
 
