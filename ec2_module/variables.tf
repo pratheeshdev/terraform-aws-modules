@@ -1,7 +1,7 @@
 variable "ami" {
   type = map(any)
   default = {
-    "us-east-1" = "ami-0d5eff06f840b45e9"
+    "us-east-1" = "ami-0c03640957628e3b8"
   }
 }
 variable "subnet_id" {

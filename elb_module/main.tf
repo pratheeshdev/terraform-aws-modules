@@ -37,5 +37,7 @@ resource "aws_lb_target_group_attachment" "ec2_attach" {
 }
 
 
-
+output "loadbanalcerdns"{
+value = aws_lb.mylb.dns_name
+}
 
