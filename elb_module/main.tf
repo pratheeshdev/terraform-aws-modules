@@ -13,7 +13,7 @@ resource "aws_lb_target_group" "mytg" {
   }
 }
 resource "aws_lb" "mylb" {
-  name               = "mytestalb"
+  name               = "mytestalb1"
   internal           = false
   subnets            = var.subnets[*]
   ip_address_type     = "ipv4"
